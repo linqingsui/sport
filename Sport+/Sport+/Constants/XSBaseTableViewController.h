@@ -1,0 +1,20 @@
+//
+//  XSBaseTableViewController.h
+//  Sport+
+//
+//  Created by 林庆遂 on 2018/3/27.
+//  Copyright © 2018年 林庆遂. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "XSBaseViewController.h"
+
+@interface XSBaseTableViewController : XSBaseViewController{
+    CGRect TableViewSize;
+}
+@property (strong ,nonatomic) UITableView *tableView;
+-(void)MyLoadfooterData;
+-(void)MyLoadHeaderData;
+-(void) footEndRefresh;
+-(void) headEndRefresh;
+@end
